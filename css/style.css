@@ -1,0 +1,2127 @@
+/*************
+
+    TAMAÑOS PARA MEDIA QUERIES
+    Desktop: Laptop-M (1366x768)
+    Tablet: iPad10 (810x1080)
+    Mobile: Galaxy Note 5 (480x835)
+
+***************/
+
+
+/* CSS DE LA PAGINA WEB */
+
+
+/* servicios */
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	overflow-x: hidden;
+    /*height: 100vh;*/
+    width: 100vh;
+}
+html{
+	font-size: 100%;
+}
+
+
+/* FUENTES */
+
+@font-face {
+    font-family: "Helvatica LT ROMAN";
+    src: url("../assets/fuentes/helvatica/Helvetica\ LT\ 55\ Roman.ttf");
+}
+
+@font-face {
+    font-family: "Glitten";
+    src: url(../assets/fuentes/Glitten/Glitten-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Nesans";
+    src: url(../assets/fuentes/nesans/Nesans\ Semi\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Crystal Noir";
+    src: url(../assets/fuentes/crystalNoir/CrystalNoir-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gamour";
+    src: url(../assets/fuentes/Gamour/Gamour\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Louis George Café";
+    src: url(../assets/fuentes/LouisGeorgeCafe/Louis\ George\ Cafe\ Light.ttf);
+}
+
+/* ESTILOS GENERALES */
+
+
+body{
+    background-color: #eed3df;
+    width:  100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #eed3df;
+}
+
+main{
+    background-color: #ecebe4;
+}
+
+ul{
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+}
+
+
+
+     /* MEDIA QUERIES */
+
+    /* DESKTOP */
+
+        @media(min-width: 1024px){
+
+            /* GRIDS:  DESKTOP */
+
+                /* Nombres Áreas */
+
+                /* Index*/
+                    header{
+                        grid-area: cabeza;
+                    }
+
+                    footer{
+                        grid-area: pie;
+                    }
+
+
+                    #SEB{
+                        grid-area: seb;
+                    }
+
+                    #botonesOpciones{
+                        grid-area: botonesOpciones;
+                    }
+
+                    #productosDestacados{
+                        grid-area: productosDestacados;
+                    }
+
+                    /* Interno interno */
+
+                        /* SEB */
+                    .slider{
+                        grid-area: slider;
+                    }
+
+                    .eslogan{
+                        grid-area: eslogan
+                    }
+
+                        /* Botones */
+                    
+                    #piedrasBruto{
+                        grid-area: piedrasBruto;
+                    }
+
+                    #joyeriaArtesanal{
+                        grid-area: joyeriaArtesanal;
+                    }
+
+                    #servicios{
+                        grid-area: servicios;
+                    }
+
+                 /* GRIDS: PRODUCTOS */
+
+                    #tienda{
+                        grid-area: productos;
+                    }
+
+                /* GRIDS: SERVICIOS */
+
+                    #regisAka{
+                        grid-area: regisAka;
+                    }
+
+                    #terFloral{
+                        grid-area: terFloral;
+                    }
+
+                    #cartaNatal{
+                        grid-area: cartaNatal;
+                    }
+
+                /* GRID AREAS */
+
+                    #gridAreasIndex{
+                        display: grid;
+                        grid-template-areas: /* 3 columnas y 5 filas */
+                        "cabeza cabeza cabeza"
+                        "slider slider eslogan"
+                        "piedrasBruto joyeriaArtesanal servicios"
+                        "productosDestacados productosDestacados productosDestacados"
+                        "pie pie pie"
+                        ;
+
+
+                        /* Dimensiones */
+                        grid-template-columns: 100%;
+                        grid-template-rows: 0,5fr 1fr 1fr 2fr 0,5fr;
+                        grid-row-gap: 10px;
+                        grid-column-gap: 5px;
+                    }
+
+        
+                    #gridAreasTienda{
+                        display: grid;
+                        grid-template-areas: /* 3 columnas y 3 filas */
+                        "cabeza cabeza cabeza"
+                        "productos productos productos"
+                        "pie pie pie"
+                        ;
+    
+    
+                        /* Dimensiones */
+                        grid-template-columns: 100%;
+                        grid-template-rows: 0,5fr 3fr 0,5fr;
+                        grid-row-gap: 10px;
+                        grid-column-gap: 5px;
+                    }
+
+                    #gridAreaServicios{
+                        display: grid;
+                        grid-template-areas: 
+                        /* 3 columnas y 3 filas*/
+                        "cabeza cabeza cabeza"
+                        "regisAka terFloral cartaNatal"
+                        "pie pie pie";
+
+                        /* Dimensiones */
+                            grid-template-columns: 100%;
+                            grid-template-rows: 0,5fr 2fr 0,5fr;
+                            grid-row-gap: 0.6rem;
+                            grid-column-gap: 0.3rem;
+
+                    }
+
+
+
+
+
+
+
+            /* ESTILOS GENERALES */
+
+                body{
+                    background-color: darksalmon;
+                }
+
+                ul li{
+                    font-family: "Glitten", sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: lighter;
+                    /*margin: auto;*/
+                    padding:  0.5rem 1rem;
+                    background-color: #306e66;
+                    border-radius: 0.2rem;
+                }
+                
+                li:hover{ /* TE HACE COLORCITO EN ITEMS*/
+                    background-color: #3b3759;
+                }
+                
+                
+                button{
+                    background-color: #3b3759;
+                    font-family: "Helvatica LT ROMAN", sans-serif;
+                    font-size:  0.8rem;
+                    font-weight: lighter;
+                    border-radius: 0.3rem;
+                    margin: 0.2rem auto;
+                    padding: 0.45rem;
+                }
+                
+                
+                
+                h2 {
+                    font-family: "Gamour", serif;
+                    font-size: 3.2rem;
+                    font-weight: lighter;
+                    text-align: left;
+                    margin: auto;
+                    padding: 1.2rem 1.56rem;
+                    color: #3b3759;
+                    
+                }
+                
+                h3{
+                    font-family: "Nesans", serif;
+                    font-size: 1.875rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    margin: 1.25rem auto;
+                    padding: 18.75px 25px;
+                    color: #eed3df;
+                    background-color: #3b3759;
+                }
+                
+                h4{   
+                    font-family: "Crystal Noir", serif;
+                    font-size: 2.5rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    margin: auto;
+                    color: #306e66;
+                }
+                
+                h5{
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 1.25rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    margin: auto;
+                }
+                
+                h6{
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 0.93rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    margin: auto;
+                }
+
+
+            /************** CLASS **************/
+
+                /* MENÚ */
+                nav{
+                    margin: 0.78rem;
+                    padding: 0.390rem;
+                } 
+
+
+                .logo{
+                    /*display: block;*/
+                    margin: auto;
+                    padding: 0.390rem;
+                }
+
+
+            /* INDEX */
+
+                /* SLIDER */
+                    #SEB{
+                        width:  100%;
+                        height: auto;
+                    }
+
+
+                    .eslogan{
+
+                        background-color: #306e66;
+                        /*width:  38.8125rem;
+                        height: 29.06rem;*/
+                        width: 45%;
+                        height: 85%;
+                        margin: 1.5rem;
+                        padding: 0.3rem;
+                        border-radius: 0.18rem;
+                    }
+
+                    .esloganh2{
+                        font-family: "Glitten", serif;
+                        font-size: 2.77rem;
+                        font-weight: lighter;
+                        text-align: center;
+                        color: #eed3df;
+                        margin: auto;
+                        padding: 3.94rem 2.4rem;
+                    }
+
+                    .esloganp{
+                        font-family: "Nesans", serif;
+                        font-size:  1.9rem;
+                        font-weight: lighter;
+                        text-align: center;
+                        color: #eed3df;
+
+                        margin: auto;
+                        padding: 0.8rem 2.4rem;
+                    }
+
+                    .slider{
+                        width: 40%;
+                        height: 30%;
+                        /*width: 45%;
+                        height: 40%;*/
+                        margin: auto;
+                        padding: 0.3rem;
+                    }
+
+                    #imgSlider{
+                    
+                        width: 100%;
+                        height: 100%;
+                        margin: auto;
+                    }
+
+                /* IMAGENES BOTONES OPCIONES*/
+
+                    .opButton{
+                        width: 30%;
+                        height: 20%;
+                        margin: auto;
+                        
+                    }
+
+                    .imgButton{  
+                        width:  25rem;
+                        height: 18.75rem;
+                        margin: 0.3rem;
+                        /*padding: 5px;*/
+                        border-radius: 0.6rem;
+                        border-style: groove;
+                    }
+
+                /* PRODUCTOS DESTACADOS */
+
+                    .producto{
+                        background-color: #f0dde6;
+                        width: 30%;
+                        height: 30%;
+                        margin: 1rem auto;
+                        padding: 0.5rem;
+                    }
+
+                    .imgDestacadosProducto{
+                        width: 21.875rem;
+                        height: 15.625rem;
+                        width: 95%;
+                        height: 85%;
+                        margin: 0.3rem auto;
+                        padding: 0.125rem;
+                        border-radius: 0.3rem;
+                    }
+
+                    .aProducto{
+                        text-decoration: none;
+                        color: #3b3759;
+                    }
+
+
+
+                /* TIENDA */
+
+                    .producto{
+                        background-color: #f0dde6;
+                        width: 30%;
+                        height: 30%;
+                        margin: 1rem auto;
+                        padding: 0.5rem;
+                    }
+
+                    .imgTiendaProducto{
+                        width: 21.875rem;
+                        height: 15.625rem;
+                        width: 95%;
+                        height: 85%;
+                        margin: 0.3rem auto;
+                        padding: 0.125rem;
+                        border-radius: 0.3rem;
+                    }
+
+                    .aProducto{
+                        text-decoration: none;
+                        color: #3b3759;
+                    } 
+
+
+                /* SERVICIOS */
+
+                    .terapias{
+                        background-color: #eed3df;
+                        margin:  0.6rem;
+                        padding: 0.6rem;
+                        width: 30%;
+                        height: 100%;
+                        border-radius: 20px;
+                    }
+
+                    .imgTerapias{
+                        width: 90%;
+                        height: 100%;
+                        margin: 0.9rem;
+                        padding: 0.4rem;
+                        border-radius: 10px;
+                    }
+
+                    .pTerapias{
+                        font-family: "Louis George Café", sans-serif;
+                        font-size: 1rem;
+                        width: 100%;
+                        height: auto;
+                        text-align: center;
+                        color: black;
+                        padding: 0.1rem;
+                    }
+
+
+
+                /* CONTACTO */
+                    label{
+                        font-family: "Louis George Café", sans-serif;
+                        font-size: 1rem;
+                        margin: 0.8rem;
+                        padding: 0.4rem;
+                    }
+                    
+                    input{
+                        background-color: #ecebe4;
+                        color: #306e66;
+                        margin: 0.6rem;
+                        padding: 0.4rem;
+                    }
+                    
+                    textarea{
+                        background-color: #ecebe4;
+                        color: #306e66;
+                        margin: 0.6rem;
+                        padding: 0.4rem;
+                    }
+                    
+                    iframe{
+                        margin: 1.5rem ;
+                        padding: 0.8rem;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                    }
+
+                    /* FORMULARIO CONTACTO */
+
+                        .h4Color{
+                            color: #eed3df;
+                        }
+
+                        .formulario{
+                        background-color: #306e66;
+                        color: #eed3df;
+                        margin: 0.8rem;
+                        padding: 0.8rem;
+                        width:  40%;
+                        height: 80%;
+                        border-radius: 10px;
+                        }
+
+                        #datos{
+                            margin: 0.6rem;
+                            padding: 0.4rem;
+                        }
+
+                        .checkbox{
+                        margin: 1.2rem;
+                        padding: 0.9rem;
+                        text-align: center;
+                        }
+
+                    /* UBICACIÓN */
+
+                        #Ubicación{
+                        background-color: #306e66;
+                        color: #eed3df;
+                        margin: 0.7rem;
+                        padding: 0.7rem;
+                        width:  40%;
+                        height: 90%;
+                        border-radius: 10px;
+                        } 
+
+
+
+
+                /* PRODUCTO */
+                    .imgProducto{
+                        width: 50%;
+                        height: 40%;
+                        margin: 0.8rem;
+                        padding: 0.4rem;
+                        border-radius: 10px;
+                    }
+                
+                    #infoProducto{
+                    background-color: #f0dde6;
+                    margin: 0.8rem;
+                    padding: 0.4rem;
+                    border-radius: 3px;
+                    width: 40vw;
+                    font-size: 1rem;
+                    }
+                
+                    #producto1{
+                        margin: auto;
+                        padding: 2rem;
+                    }
+
+
+
+
+                /* FOOTER */
+
+                footer{
+                    background-color: #eed3df;
+                    color: #3b3759;
+                    width: auto;
+                    height: auto;
+                }
+
+
+                    .h5Footer{
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 1.25rem;
+                        font-weight: lighter;
+                        text-align: left;
+                        margin: auto;
+                        padding: 1.25rem;
+                    }
+
+                    .h6Footer{
+                        
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 0.93rem;
+                        font-weight: lighter;
+                        text-align: left;
+                        margin: auto;
+                        padding: 0.625rem;
+                    }
+
+                    .swipeUp{
+                        font-family: "Nesans", serif;
+                        font-size: 2rem;
+                        font-weight: lighter;
+                        text-align: center;
+                        margin: 2.5rem;
+                        padding: 1.2rem 1.56rem;
+                        color: #eed3df;
+                        background-color: #3b3759;
+                    }
+
+
+            /* FLEXBOX */
+
+                /* HEADER */
+
+                    .navFlex{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-evenly;
+                    }
+
+                    .logoFlex{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                    }
+
+
+            /* INDEX */
+                /* SECTION SEB*/
+
+
+                    .sectionFlex{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-around;
+                    }
+
+                    .buttonTiendaFlex{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                    }
+
+                    #imgSlider{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                    }
+
+
+                /* SECTION BOTONES OPCIONES */
+
+                    .h3SectionButtonFlex{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: flex-end;
+
+                    }
+
+                    .opcButtonFlex{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-around;
+                    }
+
+                /*PRODUCTOS DESTACADOS */
+
+
+                    .productoDesFlex{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        align-content: flex-start;
+                    }
+
+
+
+            /* TIENDA */
+                .productoFlex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                }
+
+
+
+            /* SERVICIOS */
+                .terapiasFlex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                }
+
+
+
+                .bTuttonerapiasFlex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+
+
+            /* CONTACTO */
+                /* MAIN */
+                .mainFlex{           
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                }
+
+                /* CONTACTO */
+
+                .formularioFlex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                }
+
+                .checkboxFlex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: flex-start;
+                }
+
+                #Ubicación{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: flex-start;
+                }
+
+
+
+            /* PRODUCTO */
+                #producto1{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    align-content: center;
+                }
+        
+                .infoProductoFlex{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: flex-start;
+                }
+
+                /*  FOOTER */
+
+                    .footerFlex{
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                    }
+
+                    .contactoFlex{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+
+                    .swipeUpFlex{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+
+        }
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* TABLET */
+
+        @media(min-width: 481px) and (max-width: 1023px){
+
+
+            /* GRIDS */
+
+                /* Nombres Áreas */
+                    header{
+                        grid-area: cabeza;
+                    }
+
+                    footer{
+                        grid-area: pie;
+                    }
+
+
+                    #SEB{
+                        grid-area: seb;
+                    }
+
+                    #botonesOpciones{
+                        grid-area: botonesOpciones;
+                    }
+
+                    #productosDestacados{
+                        grid-area: productosDestacados;
+                    }
+
+                    /* Interno interno */
+
+                        /* SEB */
+                    .slider{
+                        grid-area: slider;
+                    }
+
+                    .eslogan{
+                        grid-area: eslogan
+                    }
+
+                        /* Botones */
+                    
+                    #piedrasBruto{
+                        grid-area: piedrasBruto;
+                    }
+
+                    #joyeriaArtesanal{
+                        grid-area: joyeriaArtesanal;
+                    }
+
+                    #servicios{
+                        grid-area: servicios;
+                    }
+
+                /* GRIDS: PRODUCTOS */
+
+                    #tienda{
+                        grid-area: productos;
+                    }
+
+                /* GRIDS: SERVICIOS */
+
+                    #regisAka{
+                        grid-area: regisAka;
+                    }
+
+                    #terFloral{
+                        grid-area: terFloral;
+                    }
+
+                    #cartaNatal{
+                        grid-area: cartaNatal;
+                    }
+
+
+            /* GRID AREAS: TABLET */
+
+                #gridAreas{
+                    display: grid;
+                    grid-template-areas: /* 2 columnas y 7 filas */
+                    "cabeza cabeza"
+                    "slider slider"
+                    "eslogan eslogan"
+                    "piedrasBruto joyeriaArtesanal"
+                    "servicios servicios"
+                    "productos productos"
+                    "pie pie"
+                    ;
+
+
+                    /* Dimensiones */
+                    grid-template-columns: 100%;
+                    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 2fr 0,5fr;
+                    grid-row-gap: 0.5rem;
+                    grid-column-gap: 0.2rem;
+                }
+
+                #gridAreasTienda{
+                    display: grid;
+                    grid-template-areas: /* 2 columnas y 3 filas */
+                    "cabeza cabeza"
+                    "productos productos"
+                    "pie pie"
+                    ;
+
+
+                    /* Dimensiones */
+                    grid-template-columns: 100%;
+                    grid-template-rows: 0,5fr 3fr 0,5fr;
+                    grid-row-gap: 10px;
+                    grid-column-gap: 5px;
+                }
+
+                #gridAreaServicios{
+                    display: grid;
+                        grid-template-areas: 
+                        /* 2 columnas y 3 filas*/
+                        "cabeza cabeza"
+                        "section section"
+                        "pie pie";
+
+                        /* Dimensiones */
+                            grid-template-columns: 100%;
+                            grid-template-rows: 0.2fr 2fr 0.4fr;
+                            grid-row-gap: 0.6rem;
+                            grid-column-gap: 0.3rem;
+
+                }
+
+
+            /* ESTILOS GENERALES */
+
+            body{
+                background-color: darkolivegreen;
+            }
+
+            ul li{
+                font-family: "Glitten", sans-serif;
+                font-size: 1rem;
+                font-weight: lighter;
+                /*margin: auto;*/
+                padding:  0.5rem 1rem;
+                background-color: #306e66;
+                border-radius: 0.2rem;
+            }
+            
+            li:hover{ /* TE HACE COLORCITO EN ITEMS*/
+                background-color: #3b3759;
+            }
+            
+            
+            button{
+                background-color: #3b3759;
+                color: #eed3df;
+                font-family: "Helvatica LT ROMAN", sans-serif;
+                font-size:  0.8rem;
+                font-weight: lighter;
+                border-radius: 0.3rem;
+                margin: 0.2rem auto;
+                padding: 0.45rem;
+            }
+            
+            
+            
+            h2 {
+                font-family: "Gamour", serif;
+                font-size: 3.2rem;
+                font-weight: lighter;
+                text-align: left;
+                margin: auto;
+                padding: 1.2rem 1.56rem;
+                color: #3b3759;
+                
+            }
+            
+            h3{
+                font-family: "Nesans", serif;
+                font-size: 1.875rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: 1.25rem auto;
+                padding: 18.75px 25px;
+                color: #eed3df;
+                background-color: #3b3759;
+            }
+            
+            h4{   
+                font-family: "Crystal Noir", serif;
+                font-size: 2.5rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: auto;
+                color: #306e66;
+            }
+            
+            h5{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.25rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: auto;
+            }
+            
+            h6{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 0.93rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: auto;
+            }
+
+
+        /* CLASS */
+
+            /* MENÚ */ 
+            nav{
+                margin: 0.8rem;
+                padding: 0.4rem;
+            } 
+
+
+            .logo{
+                /*display: block;*/
+                margin: auto;
+                padding: 0.390rem;
+            ;
+            }
+
+            /* ESLOGAN Y SLIDER */
+
+                #SEB{
+                    width:  100%;
+                    height: auto;
+                }
+
+
+                .eslogan{
+
+                    background-color: #306e66;
+                    /*width:  38.8125rem;
+                    height: 29.06rem;*/
+                    width: 80%;
+                    height: 40%;
+                    margin: 1rem;
+                    padding: 0.3rem;
+                    border-radius: 0.18rem;
+
+                }
+
+                .esloganh2{
+                    font-family: "Glitten", serif;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    color: #eed3df;
+                    margin: auto;
+                    padding: 2rem 2.4rem;
+                }
+
+                .esloganp{
+                    font-family: "Nesans", serif;
+                    font-size:  1.4rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    color: #eed3df;
+
+                    margin: auto;
+                    padding: 0.3rem 2.4rem;
+                }
+
+                .slider{
+                    width: 90%;
+                    height: 80%;
+                    /*width: 45%;
+                    height: 40%;*/
+                    margin: 1rem auto;
+                    padding: 0.5rem;
+                }
+
+                #imgSlider{
+                    
+                    width: 80%;
+                    height: 80%;
+                    margin: auto;
+                }
+
+            /* IMAGENES BOTONES OPCIONES*/
+                .imgButton{  
+                    width:  25rem;
+                    height: 18.75rem;
+                    margin: 0.3rem;
+                    /*padding: 5px;*/
+                    border-radius: 0.6rem;
+                    border-style: groove;
+                }
+
+            /* PRODUCTOS DESTACADOS */
+
+                .producto{
+                    background-color: #f0dde6;
+                    width: 30%;
+                    height: 30%;
+                    margin: 1rem auto;
+                    padding: 0.5rem;
+                }
+
+                .imgDestacadosProducto{
+                    width: 21.875rem;
+                    height: 15.625rem;
+                    width: 95%;
+                    height: 85%;
+                    margin: 0.3rem auto;
+                    padding: 0.125rem;
+                    border-radius: 0.3rem;
+                }
+
+                .aProducto{
+                    text-decoration: none;
+                    color: #3b3759;
+                }
+
+
+            /* PRODUCTOS TIENDA */
+                .producto{
+                    background-color: #f0dde6;
+                    width: 30%;
+                    height: 30%;
+                    margin: 1rem auto;
+                    padding: 0.5rem;
+                }
+
+                .imgTiendaProducto{
+                    width: 21.875rem;
+                    height: 15.625rem;
+                    width: 95%;
+                    height: 85%;
+                    margin: 0.3rem auto;
+                    padding: 0.125rem;
+                    border-radius: 0.3rem;
+                }
+
+                .aProducto{
+                    text-decoration: none;
+                    color: #3b3759;
+                }
+
+            /* SERVICIOS */
+
+                .terapias{
+                    background-color: #eed3df;
+                    margin:  0.6rem;
+                    padding: 0.6rem;
+                    width: 40%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+
+                .imgTerapias{
+                    width: 90%;
+                    height: 100%;
+                    margin: 0.9rem;
+                    padding: 0.4rem;
+                    border-radius: 10px;
+                }
+
+                .pTerapias{
+                    font-family: "Louis George Café", sans-serif;
+                    font-size: 90%;
+                    width: 90%;
+                    height: auto;
+                    text-align: center;
+                    color: black;
+                    padding: 0.1rem;
+                }
+
+                
+
+                /* CONTACTO */
+                label{
+                    font-family: "Louis George Café", sans-serif;
+                    font-size: 1rem;
+                    margin: 0.8rem;
+                    padding: 0.4rem;
+                }
+                
+                input{
+                    background-color: #ecebe4;
+                    color: #306e66;
+                    margin: 0.6rem;
+                    padding: 0.4rem;
+                }
+                
+                textarea{
+                    background-color: #ecebe4;
+                    color: #306e66;
+                    margin: 0.6rem;
+                    padding: 0.4rem;
+                }
+                
+                iframe{
+                    margin: 1.5rem ;
+                    padding: 0.8rem;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+
+                /* FORMULARIO CONTACTO */
+
+                    .h4Color{
+                        color: #eed3df;
+                    }
+
+                    .formulario{
+                    background-color: #306e66;
+                    color: #eed3df;
+                    margin: 0.8rem;
+                    padding: 0.8rem;
+                    width:  40%;
+                    height: 80%;
+                    border-radius: 10px;
+                    }
+
+                    #datos{
+                        margin: 0.6rem;
+                        padding: 0.4rem;
+                    }
+
+                    .checkbox{
+                    margin: 1.2rem;
+                    padding: 0.9rem;
+                    text-align: center;
+                    }
+
+                /* UBICACIÓN */
+
+                    #Ubicación{
+                    background-color: #306e66;
+                    color: #eed3df;
+                    margin: 0.7rem;
+                    padding: 0.7rem;
+                    width:  40%;
+                    height: 90%;
+                    border-radius: 10px;
+                    } 
+
+
+
+
+            /* PRODUCTO */
+                .imgProducto{
+                    width: 50%;
+                    height: 40%;
+                    margin: 0.8rem;
+                    padding: 0.4rem;
+                    border-radius: 10px;
+                }
+            
+                #infoProducto{
+                background-color: #f0dde6;
+                margin: 0.8rem;
+                padding: 0.4rem;
+                border-radius: 3px;
+                width: 40vw;
+                font-size: 1rem;
+                }
+            
+                #producto1{
+                    margin: auto;
+                    padding: 2rem;
+                }
+
+
+            /* FOOTER */
+
+                footer{
+                    background-color: #eed3df;
+                    color: #3b3759;
+                    width: auto;
+                    height: auto;
+                }
+
+
+                    .h5Footer{
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 1.25rem;
+                        font-weight: lighter;
+                        text-align: left;
+                        margin: auto;
+                        padding: 1.25rem;
+                    }
+
+                    .h6Footer{
+                        
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 0.93rem;
+                        font-weight: lighter;
+                        text-align: left;
+                        margin: auto;
+                        padding: 0.625rem;
+                    }
+
+                    .swipeUp{
+                        font-family: "Nesans", serif;
+                        font-size: 2rem;
+                        font-weight: lighter;
+                        text-align: center;
+                        margin: 2.5rem;
+                        padding: 1.2rem 1.56rem;
+                        color: #eed3df;
+                        background-color: #3b3759;
+                    }
+
+
+            /* FLEXBOX */
+
+                /* HEADER */
+
+                .navFlex{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-evenly;
+                }
+
+                .logoFlex{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                }
+
+
+        /* INDEX */
+            /* SECTION SEB*/
+
+
+                .sectionFlex{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                }
+
+                .buttonTiendaFlex{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                }
+
+                #imgSlider{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                }
+
+
+            /* SECTION BOTONES OPCIONES */
+
+                .h3SectionButtonFlex{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end;
+
+                }
+
+                .opcButtonFlex{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                }
+
+            /*PRODUCTOS DESTACADOS */
+
+
+                .productoDesFlex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                }
+
+
+
+        /* TIENDA */
+            .productoFlex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+
+
+
+        /* SERVICIOS */
+            .terapiasFlex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+
+
+
+            .bTuttonerapiasFlex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+            }
+
+
+
+        /* CONTACTO */
+            /* MAIN */
+            .mainFlex{           
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+
+            /* CONTACTO */
+
+            .formularioFlex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+
+            .checkboxFlex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: flex-start;
+            }
+
+            #Ubicación{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: flex-start;
+            }
+
+
+
+        /* PRODUCTO */
+            #producto1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+            }
+    
+            .infoProductoFlex{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: flex-start;
+            }
+
+            /*  FOOTER */
+
+                .footerFlex{
+                flex-flow: row wrap;
+                justify-content: space-around;
+                }
+
+                .contactoFlex{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .swipeUpFlex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* MOBILE:  */
+
+    @media (max-width: 480px) {
+
+            /* GRIDS */
+
+                /* Nombres Áreas */
+
+                header{
+                    grid-area: cabeza;
+                }
+
+                footer{
+                    grid-area: pie;
+                }
+
+
+                #SEB{
+                    grid-area: seb;
+                }
+
+                #botonesOpciones{
+                    grid-area: botonesOpciones;
+                }
+
+                #productos{
+                    grid-area: productos;
+                }
+
+                /* Interno interno */
+
+                    /* SEB */
+                .slider{
+                    grid-area: slider;
+                }
+
+                .eslogan{
+                    grid-area: eslogan
+                }
+
+                    /* Botones */
+                
+                #piedrasBruto{
+                    grid-area: piedrasBruto;
+                }
+
+                #joyeriaArtesanal{
+                    grid-area: joyeriaArtesanal;
+                }
+
+                #servicios{
+                    grid-area: servicios;
+                }
+
+
+        /* GRID AREAS: MOVILE */
+
+            #gridAreas{
+                display: grid;
+                grid-template-areas: /* 1 columnas y 8 filas */
+                "cabeza"
+                "slider"
+                "eslogan"
+                "piedrasBruto"
+                "joyeriaArtesanall"
+                "servicios"
+                "productos"
+                "pie"
+                ;
+
+
+                /* Dimensiones */
+                grid-template-columns: auto;
+                grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr 2fr 0,5fr;
+                grid-row-gap: 0.1rem;
+                grid-column-gap: 0.2rem;
+            }
+
+            
+        /* ESTILOS GENERALES */
+
+            
+            ul li{
+                font-family: "Glitten", sans-serif;
+                font-size: 1rem;
+                font-weight: lighter;
+                /*margin: auto;*/
+                padding:  0.5rem 1rem;
+                background-color: #306e66;
+                border-radius: 0.2rem;
+            }
+            
+            li:hover{ /* TE HACE COLORCITO EN ITEMS*/
+                background-color: #3b3759;
+            }
+            
+            
+            button{
+                background-color: #3b3759;
+                font-family: "Helvatica LT ROMAN", sans-serif;
+                font-size:  0.8rem;
+                font-weight: lighter;
+                border-radius: 0.3rem;
+                margin: 0.2rem auto;
+                padding: 0.45rem;
+                color: #eed3df;
+            }
+            
+            
+            
+            h2 {
+                font-family: "Gamour", serif;
+                font-size: 3.2rem;
+                font-weight: lighter;
+                text-align: left;
+                margin: auto;
+                padding: 1.2rem 1.56rem;
+                color: #3b3759;
+                
+            }
+            
+            h3{
+                font-family: "Nesans", serif;
+                font-size: 1.875rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: 1.25rem auto;
+                padding: 18.75px 25px;
+                color: #eed3df;
+                background-color: #3b3759;
+            }
+            
+            h4{   
+                font-family: "Crystal Noir", serif;
+                font-size: 2.5rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: auto;
+                color: #306e66;
+            }
+            
+            h5{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.25rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: auto;
+            }
+            
+            h6{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 0.93rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: auto;
+            }
+
+
+            
+        /* CLASS */
+
+            /* MENÚ, ESLOGAN Y SLIDER */
+            nav{
+                margin: 0.8rem;
+                padding: 0.4rem;
+            } 
+
+
+            .logo{
+                /*display: block;*/
+                margin: auto;
+                padding: 0.390rem;
+            ;
+            }
+
+            /*#SEB{
+                width:  auto;
+                height: auto;
+            }*/
+
+
+            .eslogan{
+
+                background-color: #306e66;
+                /*width:  38.8125rem;
+                height: 29.06rem;*/
+                width: 80%;
+                height: 40%;
+                margin: 1rem;
+                padding: 0.3rem;
+                border-radius: 0.18rem;
+
+            }
+
+            .esloganh2{
+                font-family: "Glitten", serif;
+                font-size: 2rem;
+                font-weight: lighter;
+                text-align: center;
+                color: #eed3df;
+                margin: auto;
+                padding: 2rem 2.4rem;
+            }
+
+            .esloganp{
+                font-family: "Nesans", serif;
+                font-size:  1.4rem;
+                font-weight: lighter;
+                text-align: center;
+                color: #eed3df;
+
+                margin: auto;
+                padding: 0.3rem 2.4rem;
+            }
+
+            .slider{
+                width: 90%;
+                height: 80%;
+                /*width: 45%;
+                height: 40%;*/
+                margin: 1rem auto;
+                padding: 0.5rem;
+            }
+
+            #imgSlider{
+                
+                width: 80%;
+                height: 80%;
+                margin: auto;
+            }
+
+            /* IMAGENES BOTONES OPCIONES*/
+            .imgButton{  
+                width:  21rem;
+                height: 18.75rem;
+                margin: 0.3rem;
+                /*padding: 5px;*/
+                border-radius: 0.6rem;
+                border-style: groove;
+            }
+
+            /* PRODUCTOS */
+
+                .producto{
+                    background-color: #f0dde6;
+                    
+                    width: 30%;
+                    height: 30%;
+                    margin: 1rem auto;
+                    padding: 0.5rem;
+                }
+
+                .imgProducto{
+                    width: 21.875rem;
+                    height: 15.625rem;
+                    width: 95%;
+                    height: 85%;
+                    margin: 0.3rem auto;
+                    padding: 0.125rem;
+                    border-radius: 0.3rem;
+                }
+
+                .aProducto{
+                    text-decoration: none;
+                    color: #3b3759;
+                }
+
+            /* FOOTER */
+
+            footer{
+                background-color: #eed3df;
+                color: #3b3759;
+                width: auto;
+                height: auto;
+            }
+
+
+                .h5Footer{
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 1.25rem;
+                    font-weight: lighter;
+                    text-align: left;
+                    margin: auto;
+                    padding: 1.25rem;
+                }
+
+                .h6Footer{
+                    
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 0.93rem;
+                    font-weight: lighter;
+                    text-align: left;
+                    margin: auto;
+                    padding: 0.625rem;
+                }
+
+                .swipeUp{
+                    font-family: "Nesans", serif;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    margin: 2.5rem;
+                    padding: 1.2rem 1.56rem;
+                    color: #eed3df;
+                    background-color: #3b3759;
+                }
+
+                
+                /* CONTACTO */
+                label{
+                    font-family: "Louis George Café", sans-serif;
+                    font-size: 1rem;
+                    margin: 0.8rem;
+                    padding: 0.4rem;
+                }
+                
+                input{
+                    background-color: #ecebe4;
+                    color: #306e66;
+                    margin: 0.6rem;
+                    padding: 0.4rem;
+                }
+                
+                textarea{
+                    background-color: #ecebe4;
+                    color: #306e66;
+                    margin: 0.6rem;
+                    padding: 0.4rem;
+                }
+                
+                iframe{
+                    margin: 1.5rem ;
+                    padding: 0.8rem;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+
+                /* FORMULARIO CONTACTO */
+
+                    .h4Color{
+                        color: #eed3df;
+                    }
+
+                    .formulario{
+                    background-color: #306e66;
+                    color: #eed3df;
+                    margin: 0.8rem;
+                    padding: 0.5rem;
+                    width:  100vw;
+                    height: 80%;
+                    border-radius: 10px;
+                    }
+
+                    #datos{
+                        margin: 0.6rem;
+                        padding: 0.4rem;
+                    }
+
+                    .checkbox{
+                    margin: 1.2rem;
+                    padding: 0.9rem;
+                    text-align: center;
+                    }
+
+                /* UBICACIÓN */
+
+                    #Ubicación{
+                    background-color: #306e66;
+                    color: #eed3df;
+                    margin: 0.7rem;
+                    padding: 0.5rem;
+                    width:  100vw;
+                    height: 90%;
+                    border-radius: 10px;
+                    } 
+
+
+
+
+            /* PRODUCTO */
+                .imgProducto{
+                    width: 70%;
+                    height: 60%;
+                    margin: 0.8rem;
+                    padding: 0.4rem;
+                    border-radius: 10px;
+                }
+            
+                #infoProducto{
+                background-color: #f0dde6;
+                margin: 0.8rem;
+                padding: 0.4rem;
+                border-radius: 3px;
+                width: 90vw;
+                font-size: 1rem;
+                }
+            
+                #producto1{
+                    margin: auto;
+                    padding: 2rem;
+                }
+
+
+            
+        /* FLEXBOX */
+
+            /* HEADER */
+
+            .navFlex{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+            }
+
+            .logoFlex{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+            }
+
+
+        /* INDEX */
+            /* SECTION SEB*/
+
+
+            .sectionFlex{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+
+            .buttonTiendaFlex{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+
+            #imgSlider{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+
+
+        /* SECTION BOTONES OPCIONES */
+
+            .h3SectionButtonFlex{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+
+            }
+
+            .opcButtonFlex{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+
+        /*PRODUCTOS DESTACADOS */
+
+
+            .productoDesFlex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+
+
+
+    /* TIENDA */
+        .productoFlex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+
+
+    /* SERVICIOS */
+        .terapiasFlex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+
+
+        .bTuttonerapiasFlex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+
+
+    /* CONTACTO */
+        /* MAIN */
+        .mainFlex{           
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+        /* CONTACTO */
+
+        .formularioFlex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+        .checkboxFlex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+        }
+
+        #Ubicación{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+        }
+
+
+
+    /* PRODUCTO */
+        #producto1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        .infoProductoFlex{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+        }
+
+        /*  FOOTER */
+
+            .footerFlex{
+            flex-flow: row wrap;
+            justify-content: space-around;
+            }
+
+            .contactoFlex{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .swipeUpFlex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+    }
+
+
+
