@@ -27,6 +27,9 @@ html{
 }
 
 
+body{
+    transition: all .5s ease-in-out;
+}	
 /* FUENTES */
 
 @font-face {
@@ -83,6 +86,110 @@ ul{
     top: 0;
 }
 
+/* ANIMACIONES, TRANSICIONES Y TRANSFORMACIONES */
+
+    .producto:hover{
+        background-color: lightslategray;
+        color: #f0dde6;
+        transition: all .5s ease-in-out;
+
+    }
+
+    .imgTiendaProducto:hover{
+        filter: none;
+    }
+
+    .imgDestacadosProducto:hover{
+        filter: none;
+    }
+
+
+    .imgButton:hover{
+        border-color: #306e66;
+        box-shadow: 3px cornflowerblue;
+    }
+
+
+
+    
+
+/* GRIDS */
+
+                /* Nombres Áreas */
+
+                /* Index*/
+                header{
+                    grid-area: cabeza;
+                }
+
+                footer{
+                    grid-area: pie;
+                }
+
+
+                #SEB{
+                    grid-area: seb;
+                }
+
+                #botonesOpciones{
+                    grid-area: botonesOpciones;
+                }
+
+                #productosDestacados{
+                    grid-area: productosDestacados;
+                }
+
+                /* Interno interno */
+
+                    /* SEB */
+                .slider{
+                    grid-area: slider;
+                }
+
+                .eslogan{
+                    grid-area: eslogan
+                }
+
+                    /* Botones */
+                
+                #piedrasBruto{
+                    grid-area: piedrasBruto;
+                }
+
+                #joyeriaArtesanal{
+                    grid-area: joyeriaArtesanal;
+                }
+
+                #servicios{
+                    grid-area: servicios;
+                }
+
+             /* GRIDS: PRODUCTOS */
+
+                #tienda{
+                    grid-area: productos;
+                }
+
+            /* GRIDS: SERVICIOS */
+
+                #regisAka{
+                    grid-area: regisAka;
+                }
+
+                #terFloral{
+                    grid-area: terFloral;
+                }
+
+                #cartaNatal{
+                    grid-area: cartaNatal;
+                }
+
+
+            /* GRIDS: PRODUCTO */
+
+                #producto1{
+                    grid-area: producto1;
+                }
 
 
      /* MEDIA QUERIES */
@@ -91,76 +198,7 @@ ul{
 
         @media(min-width: 1024px){
 
-            /* GRIDS:  DESKTOP */
-
-                /* Nombres Áreas */
-
-                /* Index*/
-                    header{
-                        grid-area: cabeza;
-                    }
-
-                    footer{
-                        grid-area: pie;
-                    }
-
-
-                    #SEB{
-                        grid-area: seb;
-                    }
-
-                    #botonesOpciones{
-                        grid-area: botonesOpciones;
-                    }
-
-                    #productosDestacados{
-                        grid-area: productosDestacados;
-                    }
-
-                    /* Interno interno */
-
-                        /* SEB */
-                    .slider{
-                        grid-area: slider;
-                    }
-
-                    .eslogan{
-                        grid-area: eslogan
-                    }
-
-                        /* Botones */
-                    
-                    #piedrasBruto{
-                        grid-area: piedrasBruto;
-                    }
-
-                    #joyeriaArtesanal{
-                        grid-area: joyeriaArtesanal;
-                    }
-
-                    #servicios{
-                        grid-area: servicios;
-                    }
-
-                 /* GRIDS: PRODUCTOS */
-
-                    #tienda{
-                        grid-area: productos;
-                    }
-
-                /* GRIDS: SERVICIOS */
-
-                    #regisAka{
-                        grid-area: regisAka;
-                    }
-
-                    #terFloral{
-                        grid-area: terFloral;
-                    }
-
-                    #cartaNatal{
-                        grid-area: cartaNatal;
-                    }
+            
 
                 /* GRID AREAS */
 
@@ -212,7 +250,20 @@ ul{
                             grid-template-rows: 0,5fr 2fr 0,5fr;
                             grid-row-gap: 0.6rem;
                             grid-column-gap: 0.3rem;
+                    }
 
+                    #gridAreaProducto{
+                        display: grid;
+                        grid-template-areas: 
+                        "cabeza cabeza cabeza"
+                        "producto1 producto1 producto1"
+                        "pie pie pie";
+
+                        /* Dimensiones */
+                        grid-template-columns: 100%;
+                        grid-template-rows: 0,5fr 2fr 0,5fr;
+                        grid-row-gap: 0.6rem;
+                        grid-column-gap: 0.3rem;
                     }
 
 
@@ -385,11 +436,10 @@ ul{
                         
                     }
 
-                    .imgButton{  
+                    .imgButton{ 
                         width:  25rem;
                         height: 18.75rem;
                         margin: 0.3rem;
-                        /*padding: 5px;*/
                         border-radius: 0.6rem;
                         border-style: groove;
                     }
@@ -412,6 +462,7 @@ ul{
                         margin: 0.3rem auto;
                         padding: 0.125rem;
                         border-radius: 0.3rem;
+                        filter: grayscale(40%);
                     }
 
                     .aProducto{
@@ -429,17 +480,23 @@ ul{
                         height: 30%;
                         margin: 1rem auto;
                         padding: 0.5rem;
+
                     }
+
 
                     .imgTiendaProducto{
                         width: 21.875rem;
                         height: 15.625rem;
                         width: 95%;
-                        height: 85%;
-                        margin: 0.3rem auto;
+                        height: 95%;
+                        justify-content: center;
+                        margin: 0.3rem;
                         padding: 0.125rem;
                         border-radius: 0.3rem;
+                        filter: grayscale(40%);
                     }
+
+                    
 
                     .aProducto{
                         text-decoration: none;
@@ -615,6 +672,19 @@ ul{
                         color: #eed3df;
                         background-color: #3b3759;
                     }
+
+
+            
+
+
+
+
+
+
+
+
+
+
 
 
             /* FLEXBOX */
@@ -826,74 +896,6 @@ ul{
 
             /* GRIDS */
 
-                /* Nombres Áreas */
-                    header{
-                        grid-area: cabeza;
-                    }
-
-                    footer{
-                        grid-area: pie;
-                    }
-
-
-                    #SEB{
-                        grid-area: seb;
-                    }
-
-                    #botonesOpciones{
-                        grid-area: botonesOpciones;
-                    }
-
-                    #productosDestacados{
-                        grid-area: productosDestacados;
-                    }
-
-                    /* Interno interno */
-
-                        /* SEB */
-                    .slider{
-                        grid-area: slider;
-                    }
-
-                    .eslogan{
-                        grid-area: eslogan
-                    }
-
-                        /* Botones */
-                    
-                    #piedrasBruto{
-                        grid-area: piedrasBruto;
-                    }
-
-                    #joyeriaArtesanal{
-                        grid-area: joyeriaArtesanal;
-                    }
-
-                    #servicios{
-                        grid-area: servicios;
-                    }
-
-                /* GRIDS: PRODUCTOS */
-
-                    #tienda{
-                        grid-area: productos;
-                    }
-
-                /* GRIDS: SERVICIOS */
-
-                    #regisAka{
-                        grid-area: regisAka;
-                    }
-
-                    #terFloral{
-                        grid-area: terFloral;
-                    }
-
-                    #cartaNatal{
-                        grid-area: cartaNatal;
-                    }
-
-
             /* GRID AREAS: TABLET */
 
                 #gridAreas{
@@ -945,7 +947,20 @@ ul{
                             grid-template-rows: 0.2fr 2fr 0.4fr;
                             grid-row-gap: 0.6rem;
                             grid-column-gap: 0.3rem;
+                }
 
+                #gridAreaProducto{
+                    display: grid;
+                    grid-template-areas: 
+                    "cabeza cabeza"
+                    "producto1 producto1"
+                    "pie pie";
+
+                    /* Dimensiones */
+                    grid-template-columns: 100%;
+                    grid-template-rows: 0,5fr 2fr 0,5fr;
+                    grid-row-gap: 0.6rem;
+                    grid-column-gap: 0.3rem;
                 }
 
 
@@ -1289,7 +1304,7 @@ ul{
                 #producto1{
                     margin: auto;
                     padding: 2rem;
-                }
+                } 
 
 
             /* FOOTER */
@@ -1537,54 +1552,7 @@ ul{
 
             /* GRIDS */
 
-                /* Nombres Áreas */
-
-                header{
-                    grid-area: cabeza;
-                }
-
-                footer{
-                    grid-area: pie;
-                }
-
-
-                #SEB{
-                    grid-area: seb;
-                }
-
-                #botonesOpciones{
-                    grid-area: botonesOpciones;
-                }
-
-                #productos{
-                    grid-area: productos;
-                }
-
-                /* Interno interno */
-
-                    /* SEB */
-                .slider{
-                    grid-area: slider;
-                }
-
-                .eslogan{
-                    grid-area: eslogan
-                }
-
-                    /* Botones */
                 
-                #piedrasBruto{
-                    grid-area: piedrasBruto;
-                }
-
-                #joyeriaArtesanal{
-                    grid-area: joyeriaArtesanal;
-                }
-
-                #servicios{
-                    grid-area: servicios;
-                }
-
 
         /* GRID AREAS: MOVILE */
 
@@ -1609,7 +1577,57 @@ ul{
                 grid-column-gap: 0.2rem;
             }
 
+
+            #gridAreasTienda{
+                display: grid;
+                grid-template-areas: /* 3 columnas y 3 filas */
+                "cabeza"
+                "productos"
+                "pie"
+                ;
+
+
+                /* Dimensiones */
+                grid-template-columns: 100%;
+                grid-template-rows: 0,5fr 3fr 0,5fr;
+                grid-row-gap: 10px;
+                grid-column-gap: 5px;
+            }
+
+            #gridAreaServicios{
+                display: grid;
+                grid-template-areas: 
+                /* 3 columnas y 3 filas*/
+                "cabeza"
+                "regisAka"
+                "terFloral"
+                "cartaNatal"
+                "pie";
+
+                /* Dimensiones */
+                    grid-template-columns: 100%;
+                    grid-template-rows: 0,5fr 2fr 2fr 2fr 0,5fr;
+                    grid-row-gap: 0.6rem;
+                    grid-column-gap: 0.3rem;
+            }
+
+            #gridAreaProducto{
+                display: grid;
+                grid-template-areas: 
+                "cabeza"
+                "producto1"
+                "pie";
+
+                /* Dimensiones */
+                grid-template-columns: 100%;
+                grid-template-rows: 0,5fr 2fr 0,5fr;
+                grid-row-gap: 0.6rem;
+                grid-column-gap: 0.3rem;
+            }
             
+
+
+
         /* ESTILOS GENERALES */
 
             
@@ -1772,9 +1790,9 @@ ul{
                 border-style: groove;
             }
 
-            /* PRODUCTOS */
+            /* PRODUCTOS DESTACADOS */
 
-                .producto{
+                #producto{
                     background-color: #f0dde6;
                     
                     width: 30%;
@@ -1783,7 +1801,7 @@ ul{
                     padding: 0.5rem;
                 }
 
-                .imgProducto{
+                .imgDestacadosProducto{
                     width: 21.875rem;
                     height: 15.625rem;
                     width: 95%;
@@ -1798,45 +1816,6 @@ ul{
                     color: #3b3759;
                 }
 
-            /* FOOTER */
-
-            footer{
-                background-color: #eed3df;
-                color: #3b3759;
-                width: auto;
-                height: auto;
-            }
-
-
-                .h5Footer{
-                    font-family: Georgia, 'Times New Roman', Times, serif;
-                    font-size: 1.25rem;
-                    font-weight: lighter;
-                    text-align: left;
-                    margin: auto;
-                    padding: 1.25rem;
-                }
-
-                .h6Footer{
-                    
-                    font-family: Georgia, 'Times New Roman', Times, serif;
-                    font-size: 0.93rem;
-                    font-weight: lighter;
-                    text-align: left;
-                    margin: auto;
-                    padding: 0.625rem;
-                }
-
-                .swipeUp{
-                    font-family: "Nesans", serif;
-                    font-size: 2rem;
-                    font-weight: lighter;
-                    text-align: center;
-                    margin: 2.5rem;
-                    padding: 1.2rem 1.56rem;
-                    color: #eed3df;
-                    background-color: #3b3759;
-                }
 
                 
                 /* CONTACTO */
@@ -1911,16 +1890,44 @@ ul{
 
 
 
-            /* PRODUCTO */
-                .imgProducto{
-                    width: 70%;
-                    height: 60%;
+                
+            /* PRODUCTOS TIENDA */
+
+            .producto{
+                background-color: #f0dde6;
+                width: 30%;
+                height: 30%;
+                margin: 1rem auto;
+                padding: 0.5rem;
+            }
+
+            .imgTiendaProducto{
+                width: 21.875rem;
+                height: 15.625rem;
+                width: 95%;
+                height: 85%;
+                margin: 0.3rem auto;
+                padding: 0.125rem;
+                border-radius: 0.3rem;
+            }
+
+            .aProducto{
+                text-decoration: none;
+                color: #3b3759;
+            }
+
+
+            /* PRODUCTO1 */
+
+                .imgProducto {
+                    width: 90vw;
+                    height: 50%;
                     margin: 0.8rem;
                     padding: 0.4rem;
                     border-radius: 10px;
                 }
-            
-                #infoProducto{
+
+                #infoProducto {
                 background-color: #f0dde6;
                 margin: 0.8rem;
                 padding: 0.4rem;
@@ -1928,13 +1935,80 @@ ul{
                 width: 90vw;
                 font-size: 1rem;
                 }
+
+
+
+        /* SERVICIOS */
+
+            .terapias{
+                background-color: #eed3df;
+                margin:  0.6rem;
+                padding: 0.6rem;
+                width: 90vw;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+            .imgTerapias{
+                width: 90%;
+                height: 100%;
+                margin: 0.9rem;
+                padding: 0.4rem;
+                border-radius: 10px;
+            }
+
+            .pTerapias{
+                font-family: "Louis George Café", sans-serif;
+                font-size: 90%;
+                width: 90%;
+                height: auto;
+                text-align: center;
+                color: black;
+                padding: 0.1rem;
+            }
+
             
-                #producto1{
+
+                
+            /* FOOTER */
+
+            footer{
+                background-color: #eed3df;
+                color: #3b3759;
+                width: auto;
+                height: auto;
+            }
+
+
+                .h5Footer{
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 1.25rem;
+                    font-weight: lighter;
+                    text-align: left;
                     margin: auto;
-                    padding: 2rem;
+                    padding: 1.25rem;
                 }
 
+                .h6Footer{
+                    
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 0.93rem;
+                    font-weight: lighter;
+                    text-align: left;
+                    margin: auto;
+                    padding: 0.625rem;
+                }
 
+                .swipeUp{
+                    font-family: "Nesans", serif;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    margin: 2.5rem;
+                    padding: 1.2rem 1.56rem;
+                    color: #eed3df;
+                    background-color: #3b3759;
+                }
             
         /* FLEXBOX */
 
