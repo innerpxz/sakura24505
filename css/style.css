@@ -27,6 +27,9 @@ html{
 }
 
 
+body{
+    transition: all .5s ease-in-out;
+}	
 /* FUENTES */
 
 @font-face {
@@ -85,82 +88,95 @@ ul{
 
 
 
+
+    
+
+/* GRIDS */
+
+                /* Nombres Áreas */
+
+                /* Index*/
+                header{
+                    grid-area: cabeza;
+                }
+
+                footer{
+                    grid-area: pie;
+                }
+
+
+                #SEB{
+                    grid-area: seb;
+                }
+
+                #botonesOpciones{
+                    grid-area: botonesOpciones;
+                }
+
+                #productosDestacados{
+                    grid-area: productosDestacados;
+                }
+
+                /* Interno interno */
+
+                    /* SEB */
+                .slider{
+                    grid-area: slider;
+                }
+
+                .eslogan{
+                    grid-area: eslogan
+                }
+
+                    /* Botones */
+                
+                #piedrasBruto{
+                    grid-area: piedrasBruto;
+                }
+
+                #joyeriaArtesanal{
+                    grid-area: joyeriaArtesanal;
+                }
+
+                #servicios{
+                    grid-area: servicios;
+                }
+
+             /* GRIDS: PRODUCTOS */
+
+                #tienda{
+                    grid-area: productos;
+                }
+
+            /* GRIDS: SERVICIOS */
+
+                #regisAka{
+                    grid-area: regisAka;
+                }
+
+                #terFloral{
+                    grid-area: terFloral;
+                }
+
+                #cartaNatal{
+                    grid-area: cartaNatal;
+                }
+
+
+            /* GRIDS: PRODUCTO */
+
+                #producto1{
+                    grid-area: producto1;
+                }
+
+
      /* MEDIA QUERIES */
 
     /* DESKTOP */
 
         @media(min-width: 1024px){
 
-            /* GRIDS:  DESKTOP */
-
-                /* Nombres Áreas */
-
-                /* Index*/
-                    header{
-                        grid-area: cabeza;
-                    }
-
-                    footer{
-                        grid-area: pie;
-                    }
-
-
-                    #SEB{
-                        grid-area: seb;
-                    }
-
-                    #botonesOpciones{
-                        grid-area: botonesOpciones;
-                    }
-
-                    #productosDestacados{
-                        grid-area: productosDestacados;
-                    }
-
-                    /* Interno interno */
-
-                        /* SEB */
-                    .slider{
-                        grid-area: slider;
-                    }
-
-                    .eslogan{
-                        grid-area: eslogan
-                    }
-
-                        /* Botones */
-                    
-                    #piedrasBruto{
-                        grid-area: piedrasBruto;
-                    }
-
-                    #joyeriaArtesanal{
-                        grid-area: joyeriaArtesanal;
-                    }
-
-                    #servicios{
-                        grid-area: servicios;
-                    }
-
-                 /* GRIDS: PRODUCTOS */
-
-                    #tienda{
-                        grid-area: productos;
-                    }
-
-                /* GRIDS: SERVICIOS */
-
-                    #regisAka{
-                        grid-area: regisAka;
-                    }
-
-                    #terFloral{
-                        grid-area: terFloral;
-                    }
-
-                    #cartaNatal{
-                        grid-area: cartaNatal;
-                    }
+            
 
 
                 /* GRIDS: PRODUCTO */
@@ -243,10 +259,7 @@ ul{
 
             /* ESTILOS GENERALES */
 
-                body{
-                    background-color: darksalmon;
-                }
-
+                
                 ul li{
                     font-family: "Glitten", sans-serif;
                     font-size: 0.9rem;
@@ -385,7 +398,7 @@ ul{
                         height: 30%;
                         /*width: 45%;
                         height: 40%;*/
-                        margin: auto;
+                        margin: 1rem auto;
                         padding: 0.3rem;
                     }
 
@@ -405,11 +418,10 @@ ul{
                         
                     }
 
-                    .imgButton{  
+                    .imgButton{ 
                         width:  25rem;
                         height: 18.75rem;
                         margin: 0.3rem;
-                        /*padding: 5px;*/
                         border-radius: 0.6rem;
                         border-style: groove;
                     }
@@ -432,6 +444,7 @@ ul{
                         margin: 0.3rem auto;
                         padding: 0.125rem;
                         border-radius: 0.3rem;
+                        filter: grayscale(40%);
                     }
 
                     .aProducto{
@@ -449,17 +462,23 @@ ul{
                         height: 30%;
                         margin: 1rem auto;
                         padding: 0.5rem;
+
                     }
+
 
                     .imgTiendaProducto{
                         width: 21.875rem;
                         height: 15.625rem;
                         width: 95%;
-                        height: 85%;
-                        margin: 0.3rem auto;
+                        height: 95%;
+                        justify-content: center;
+                        margin: 0.3rem;
                         padding: 0.125rem;
                         border-radius: 0.3rem;
+                        filter: grayscale(40%);
                     }
+
+                    
 
                     .aProducto{
                         text-decoration: none;
@@ -635,6 +654,19 @@ ul{
                         color: #eed3df;
                         background-color: #3b3759;
                     }
+
+
+            
+
+
+
+
+
+
+
+
+
+
 
 
             /* FLEXBOX */
@@ -846,6 +878,7 @@ ul{
 
             /* GRIDS */
 
+<<<<<<< HEAD
                 /* Nombres Áreas */
                     header{
                         grid-area: cabeza;
@@ -916,6 +949,8 @@ ul{
                 /* GRID: PRODUCTO */
 
 
+=======
+>>>>>>> animaciones
             /* GRID AREAS: TABLET */
 
                 #gridAreas{
@@ -986,10 +1021,7 @@ ul{
 
             /* ESTILOS GENERALES */
 
-            body{
-                background-color: darkolivegreen;
-            }
-
+            
             ul li{
                 font-family: "Glitten", sans-serif;
                 font-size: 1rem;
@@ -1572,42 +1604,8 @@ ul{
 
             /* GRIDS */
 
-                /* Nombres Áreas */
-
-                header{
-                    grid-area: cabeza;
-                }
-
-                footer{
-                    grid-area: pie;
-                }
-
-
-                #SEB{
-                    grid-area: seb;
-                }
-
-                #botonesOpciones{
-                    grid-area: botonesOpciones;
-                }
-
-                #productos{
-                    grid-area: productos;
-                }
-
-                /* Interno interno */
-
-                    /* SEB */
-                .slider{
-                    grid-area: slider;
-                }
-
-                .eslogan{
-                    grid-area: eslogan
-                }
-
-                    /* Botones */
                 
+<<<<<<< HEAD
                 #piedrasBruto{
                     grid-area: piedrasBruto;
                 }
@@ -1624,6 +1622,8 @@ ul{
                 #producto1{
                     grid-area: producto1;
                 }
+=======
+>>>>>>> animaciones
 
         /* GRID AREAS: MOVILE */
 
@@ -2269,4 +2269,54 @@ ul{
     }
 
 
+/* ANIMACIONES, TRANSICIONES Y TRANSFORMACIONES */
 
+.producto:hover{
+    background-color: lightslategray;
+    color: #f0dde6;
+    transition: all .5s ease-in-out;
+
+}
+
+.imgTiendaProducto:hover{
+    filter: none;
+}
+
+.imgDestacadosProducto:hover{
+    filter: none;
+}
+
+
+.imgButton:hover{
+    border-color: #306e66;
+    scale: 1.05;
+    transition: all 2s;
+}
+
+button:hover{
+    background-color: lightslategray;
+}
+
+.eslogan:hover{
+    background-color: darksalmon;
+    color: #3b3759;
+    scale: 1.1;
+    transition: all 3s;
+}
+
+#imgSlider:hover{
+    scale: 1.1;
+    transition: 4s;
+}
+
+.terapias:hover{
+    background-color:darksalmon;
+    transition: all .5s ease-in-out;
+
+}
+
+h3:hover{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    transition: all 5s ease-in-out;
+}
