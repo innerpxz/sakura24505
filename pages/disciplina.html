@@ -21,36 +21,148 @@
 
 
 </head>
-<body>
+<body class="d-flex flex-wrap">
 
 
     
-    <div class="container">
+    <div class="container ">
         <header id="up" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
             <a href="../index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"> <img src="../assets/imagenes/LOGOGEMA250x150.png" alt=""> </svg>
+                
+                <img class="bi me-3" width="80%" aria-label="Bootstrap"  src="../assets/imagenes/LOGOGEMA.png">
             </a>
         
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="../index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
                 <li><a href="../pages/tienda.html" class="nav-link px-2 link-dark">Tienda</a></li>
                 <li><a href="../pages/servicios.html" class="nav-link px-2 link-dark">Servicios</a></li>
-                <li><a href="../pages/contacto.html" class="nav-link px-2 link-dark">Contacto</a></li>
+                <li ><a href="#" data-bs-toggle="modal" data-bs-target="#contacto" class="nav-link px-2 link-dark"> Contacto </a></li>
             </ul>
         
             
 
-            <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-dark me-2 "> Iniciar sesión </button>
-                <button type="button" class="btn btn-dark buttoncolor"> Crear cuenta </button>
-            </div> 
+            <!-- Button sesion -->
+            <div class="col-md-3 text-end d-flex flex-wrap ">
+                <button type="button" class="btn btn-outline-dark me-2 mt-1" data-bs-toggle="modal" data-bs-target="#login"> Iniciar sesión </button>
+                <button type="button" class="btn btn-dark buttoncolor" data-bs-toggle="modal" data-bs-target="#signUp"> Crear cuenta </button>
+                
+            </div>  
 
-            
+                        
+            <!-- Modal SIgn Up -->
+            <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">  Crea tu cuenta </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <label for="Email" class="form-label"> Ingresa tu email:
+                            <input type="email" class="form-control" placeholder="aaaaa@example.com" name="Email"><br>
+                        </label>
+                        <hr>
+                        <label for="Nombre y apellido" class="form-label"> Nombre de usuario:
+                            <input type="text" class="form-control" name="NombreUsuario"><br>
+                        </label>
+                        
+                        <label for="Password" class="form-label" > Contraseña:
+                            <input type="password" class="form-control" name="Contraseña"><br>
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Volver </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Gracias por registrarte!" data-bs-content="Recibirás descuentos y promos exclusivas. Ten buen día"> Crear usuario </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Modal Login-->
+            <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">  Iniciar Sesion </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <label for="Usuario" class="form-label"> Nombre de usuario:
+                            <input type="text" class="form-control" name="NombreUsuario"><br>
+                        </label>
+                        
+                        <label for="Password" class="form-label" > Contraseña:
+                            <input type="password" class="form-control" name="Contraseña"><br>
+                        </label>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Volver </button>
+                    <button type="button" class="btn btn-primary"> Iniciar Sesión </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Modal Contacto -->
+
+        <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">  Contacto </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                    <div class="mb-2">
+
+                        <label for="Nombre y apellido" class="form-label"> Nombre completo
+                            <input type="text" class="form-control" name="NombreUsuario"><br>
+                        </label>
+
+                        <label for="Email" class="form-label"> Ingresa tu email
+                            <input type="email" class="form-control" placeholder="aaaaa@example.com" name="Email"><br>
+                        </label>
+
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="message-text" class="col-form-label"> Comentario </label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="novedades" class="form-label"> ¿Querés recibir novedades y promociones? 
+                            <input type="checkbox" name="novedades" value="1">
+                        </label>
+                    </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+                    <button type="button" class="btn btn-primary"> Enviar </button>
+                </div>
+                </div>
+            </div>
+        </di>
             
         </header>
     </div>
 
-    <main>
+
+
+
+
+
+
+
+
+    <!-- <main >
         
 
         <div class="justify-content-center pt-2 ps-5 mb-2 border" style="background-color: #306e66;" >
@@ -64,9 +176,97 @@
             
         </div>
 
+        <!-- PRODUCTO 
+        <section id="producto1">
+            <img class="imgProducto" src="../assets/imagenes/astroIlu.jpg" alt="Lectura de la Carta Natal">
+
+            <div class="infoProductoFlex">
+                <h4 > Lectura de la Carta Natal </h4>
+
+                    <div id="infoProducto">
+                        
+                        <p> 
+                            Cada vez que miramos la Carta Natal, estamos en un momento distinto de su despliegue, por eso encontramos nuevos contenidos y perspectivas que nos permiten comprendernos bajo otra luz.
+                            Las sesiones duran 2 hs aproximadamente. Recomendamos 2 encuentros. Uno para la lectura de la carta natal y un segundo encuentro para la lectura de la revolución solar.
+                            <br>
+                            <strong> Primer encuentro: </strong>  
+                            Hacemos un recorrido de tu historia de vida, para poder asociar los hechos vividos y las relaciones con otras personas, a la configuración energética de la Carta Natal. Te preguntaremos sobre tus vivencias para comprender la conexión entre el «territorio» (vida concreta) y el «mapa» (el potencial energético que muestra la Carta Natal)
+                            <br>
+                            <strong> Segundo encuentro: </strong>
+                            Recorremos los principales núcleos energéticos de tus cartas en profundidad. El objetivo será trabajar con aquellas temáticas de tu vida que te resulten de interés en este momento, para que la lectura te permita comprenderlas desde una perspectiva.
+                        </p>
+                        <br>
+                        <h5> Precio: $2500 </h5>
+                    </div>
+
+
+                    <!-- BOTONES 
+                <div>
+                    <input type="number"  value="1" min="1"max="10" step="1" />
+                    <button name="Comprar" data-bs-toggle="modal" data-bs-target="#comprar" class="btn buttoncolor  btn-dark mt-1"> Comprar </button>
+                    <button name="Cancelar" class="btn buttoncolor active btn-dark mt-1"> <a href="./servicios.html"> Cancelar </a> </button>
+                </div>
+                    
+
+
+
+            </div>
+
+        </section>
+
+    </main> -->
+
+    <main>
+
+        <section id="producto1">
+            <img class="imgProducto" src="../assets/imagenes/astroIlu.jpg" alt="Lectura de la carta natal">
+
+            <div class="infoProductoFlex">
+                <h4> Lectura de la Carta Natal </h4>
+
+                    <div id="infoProducto">
+                        <p> 
+                            Cada vez que miramos la Carta Natal, estamos en un momento distinto de su despliegue, por eso encontramos nuevos contenidos y perspectivas que nos permiten comprendernos bajo otra luz.
+                            Las sesiones duran 2 hs aproximadamente. Recomendamos 2 encuentros. Uno para la lectura de la carta natal y un segundo encuentro para la lectura de la revolución solar.
+                        </p>
+
+                            <br>
+
+                        <p> <strong> Primer encuentro: </strong>  
+                            Hacemos un recorrido de tu historia de vida, para poder asociar los hechos vividos y las relaciones con otras personas, a la configuración energética de la Carta Natal. Te preguntaremos sobre tus vivencias para comprender la conexión entre el «territorio» (vida concreta) y el «mapa» (el potencial energético que muestra la Carta Natal)
+                        </p>
+                            
+                            <br>
+
+                        <p>
+                            <strong> Segundo encuentro: </strong>
+                            Recorremos los principales núcleos energéticos de tus cartas en profundidad. El objetivo será trabajar con aquellas temáticas de tu vida que te resulten de interés en este momento, para que la lectura te permita comprenderlas desde una perspectiva.
+                        </p>
+
+                        <br>
+                        <h5> Precio: $2500 </h5>
+                    </div>
+
+
+                    <!-- BOTONES -->
+                <div>
+                    <input type="number"  value="1" min="1"max="10" step="1" />
+                    <button name="Comprar" data-bs-toggle="modal" data-bs-target="#comprar" class="btn buttoncolor  btn-dark mt-1"> Comprar </button>
+                    <button name="Cancelar" class="btn buttoncolor active btn-dark mt-1"> <a href="./servicios.html"> Cancelar </a> </button>
+                </div>
+                    
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
+
+
+
+
+    <footer class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            
         
         <!-- Boton Subir -->
         <div class="col-md-5 p-lg-2 mx-auto my-0 mt-3 text-center">
@@ -85,10 +285,8 @@
                 
             
         
-            <a href="#up" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <img src="../assets/imagenes/LOGOGEMA250x150.png">
-                </svg>
+            <a href="../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img class="bi me-3" width="80%" aria-label="Bootstrap"  src="../assets/imagenes/LOGOGEMA.png">
             </a>
         
             <ul class="nav col-md-4 justify-content-end">
