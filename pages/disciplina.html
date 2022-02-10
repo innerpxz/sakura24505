@@ -218,6 +218,17 @@
 
     <main>
 
+        <div class="justify-content-center pt-2 ps-5 mb-2 border" style="background-color: #306e66;" >
+            <nav  aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" > <a href="../index.html"> Inicio </a> </li>
+                    <li class="breadcrumb-item" >  <a href="../pages/servicios.html"> Servicios </a> </li>
+                    <li class="breadcrumb-item active" style="color: lightgray;" aria-current="page"> Disciplina </li>
+                </ol>
+            </nav>
+            
+        </div>
+
         <section id="producto1">
             <img class="imgProducto" src="../assets/imagenes/astroIlu.jpg" alt="Lectura de la carta natal">
 
@@ -258,6 +269,41 @@
             </div>
 
         </section>
+
+        <!-- Modal Comprar -->
+        <div class="modal fade" id="comprar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">  Crea tu cuenta </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <label for="Email" class="form-label"> Ingresa tu email:
+                        <input type="email" class="form-control" placeholder="aaaaa@example.com" name="Email"><br>
+                    </label>
+                    
+                    <label for="Nombre y apellido" class="form-label"> Nombre completo
+                        <input type="text" class="form-control" name="NombreUsuario"><br>
+                    </label>
+
+                    <hr class="dividier"
+
+                    <label for="pago" class="form-label"> Método de pago
+                        <input type="text" class="form-control" name="pago"><br>
+                    </label>
+
+                    <label for="domiclio" class="form-label"> Domicilio
+                        <input type="text" class="form-control" name="domicilio"><br>
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"> Comprar </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancelar </button>
+                </div>
+            </div>
+            </div>
 
     </main>
 

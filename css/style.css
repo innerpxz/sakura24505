@@ -498,6 +498,45 @@ h6{
                     }
 
             
+            /* BOTONES OPCIONES */
+
+
+            .opButton{
+                width: 30%;
+                height: 20%;
+                margin: auto;
+                
+            }
+
+            .imgButton{ 
+                width:  20rem;
+                height: 12.75rem;
+                margin: 0.3rem;
+                border-radius: 0.6rem;
+                border-style: groove;
+            }
+
+
+            .imgButton:hover{
+                border-color: #306e66;
+                scale: 1.05;
+                transition: all 0.5s;
+            }
+
+            .opcButtonFlex{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+
+            .h4Button{
+                font-family: "Crystal Noir", serif;
+                font-size: 3rem;
+                font-weight: lighter;
+                text-align: center;
+                margin: auto;
+                color: #306e66;
+            }
 
 
 
@@ -706,6 +745,45 @@ h6{
                 }*/
 
         
+        /* BOTONES OPCIONES */
+
+
+        .opButton{
+            width: 30%;
+            height: 20%;
+            margin: auto;
+            
+        }
+
+        .imgButton{ 
+            width:  12rem;
+            height: 8rem;
+            margin: 0.3rem;
+            border-radius: 0.6rem;
+            border-style: groove;
+        }
+
+
+        .imgButton:focus{
+            border-color: #306e66;
+            scale: 1.05;
+            transition: all 0.5s;
+        }
+
+        .opcButtonFlex{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .h4Button{
+            font-family: "Crystal Noir", serif;
+            font-size: 2rem;
+            font-weight: lighter;
+            text-align: center;
+            margin: auto;
+            color: #306e66;
+        }
 
 
         /* FLEXBOX */
@@ -981,7 +1059,46 @@ h6{
                 padding: 2rem;
             }*/
 
-    
+                /* BOTONES OPCIONES */
+
+
+                .opButton{
+                    width: 30%;
+                    height: 20%;
+                    margin: auto;
+                    
+                }
+
+                .imgButton{ 
+                    width:  14rem;
+                    height: 12rem;
+                    margin: 0.3rem;
+                    border-radius: 0.6rem;
+                    border-style: groove;
+                }
+
+
+                .imgButton:focus{
+                    border-color: #306e66;
+                    scale: 1.05;
+                    transition: all 0.5s;
+                }
+
+                .opcButtonFlex{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                }
+
+                .h4Button{
+                    font-family: "Crystal Noir", serif;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    margin: auto;
+                    color: #306e66;
+                }
+
 
 
     /* FLEXBOX */
