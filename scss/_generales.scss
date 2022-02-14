@@ -1,0 +1,62 @@
+
+/***************************
+    ESTILOS GENERALES
+***************************/
+
+
+body{
+    background-color: #eed3df;
+    width:  100vw;
+    height: auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #eed3df;
+}
+
+main{
+    background-color: #ecebe4;
+}
+
+ul{
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+
+    li{
+        font-family: "Glitten", sans-serif;
+
+        &:hover{
+            background-color: #ecebe4;
+        }
+    }
+}
+
+
+h2 {
+    font-family: "Gamour", serif;
+    color: #3b3759;
+    
+}
+
+h3{
+    font-family: "Nesans", serif;
+    
+}
+
+
+h4{   
+    font-family: "Crystal Noir", serif;
+    font-size: 3rem;
+}
+
+
+h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.93rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+}

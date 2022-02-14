@@ -1,0 +1,103 @@
+/************** CLASS **************/
+
+.buttoncolor{
+    background-color: #3b3759;
+    color: #eed3df;
+}
+
+.h3titulos{
+    font-family: "Nesans", serif;
+    font-size: 1.875rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 1.25rem auto;
+    padding: 18.75px 25px;
+    color: #eed3df;
+    background-color: #3b3759;
+
+    &:hover{
+        background-color: #a4508b;
+        background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+        transition: all 8s;
+    }
+}
+
+
+
+/* ESLOGAN*/
+
+    
+    .bgcolor{
+        background-color: #f0dde6;
+    }
+
+
+/* BOTONES OPCIONES */
+
+
+.opButton{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    
+}
+
+.imgButton{ 
+    width:  20rem;
+    height: 12.75rem;
+    margin: 0.3rem;
+    border-radius: 0.6rem;
+    border-style: groove;
+
+    &:hover{
+        border-color: #306e66;
+        scale: 1.05;
+        transition: all 0.5s;
+    }
+}
+
+.h4Button{
+    font-family: "Crystal Noir", serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+    color: #306e66;
+}
+
+/* PRODUCTOS */
+
+.h5producto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#producto{
+    &:hover{
+        background-color: lightslategray;
+        color: #f0dde6;
+        transition: all .5s ease-in-out;
+        filter: none;
+    }
+}
+
+ /* PRODUCTO */
+    .imgProducto{
+        width: 50%;
+        height: 40%;
+        margin: 0.8rem;
+        padding: 0.4rem;
+        border-radius: 10px;
+    }
+
+    #infoProducto{
+    background-color: #f0dde6;
+    margin: 0.8rem;
+    padding: 0.4rem;
+    border-radius: 3px;
+    width: 40vw;
+    font-size: 1rem;
+    }
+
+
+    
