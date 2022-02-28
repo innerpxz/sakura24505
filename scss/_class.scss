@@ -1,19 +1,15 @@
 /************** CLASS **************/
 
 .buttoncolor{
-    background-color: #3b3759;
-    color: #eed3df;
+    background-color: $color-dos;
+    color: $color-tres;
 }
 
-.h3titulos{
-    font-family: "Nesans", serif;
-    font-size: 1.875rem;
-    font-weight: lighter;
-    text-align: center;
+h2 {
     margin: 1.25rem auto;
     padding: 18.75px 25px;
-    color: #eed3df;
-    background-color: #3b3759;
+    color: $color-tres;
+    background-color: $color-dos;
 
     &:hover{
         background-color: #a4508b;
@@ -28,7 +24,7 @@
 
     
     .bgcolor{
-        background-color: #f0dde6;
+        background-color: $color-cuatro;
     }
 
 
@@ -50,19 +46,19 @@
     border-style: groove;
 
     &:hover{
-        border-color: #306e66;
+        border-color: $color-uno;
         scale: 1.05;
         transition: all 0.5s;
     }
 }
 
 .h4Button{
-    font-family: "Crystal Noir", serif;
+    font-family: $font-dos, serif;
     font-size: 3rem;
     font-weight: lighter;
     text-align: center;
     margin: auto;
-    color: #306e66;
+    color: $color-uno;
 }
 
 /* PRODUCTOS */
@@ -75,7 +71,7 @@
 #producto{
     &:hover{
         background-color: lightslategray;
-        color: #f0dde6;
+        color: $color-cuatro;
         transition: all .5s ease-in-out;
         filter: none;
     }
@@ -91,7 +87,7 @@
     }
 
     #infoProducto{
-    background-color: #f0dde6;
+    background-color: $color-cuatro;
     margin: 0.8rem;
     padding: 0.4rem;
     border-radius: 3px;

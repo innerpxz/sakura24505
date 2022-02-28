@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #eed3df;
+    background-color: $color-tres;
     width:  100vw;
     height: auto;
     
@@ -13,11 +13,11 @@ body{
 
 a{
     text-decoration: none;
-    color: #eed3df;
+    color: $color-tres;
 }
 
 main{
-    background-color: #ecebe4;
+    background-color: $color-bgk;
 }
 
 ul{
@@ -34,27 +34,37 @@ ul{
     }
 }
 
+h1{
+    font-family: $font-uno, serif;
+    text-decoration: solid;
+
+}
 
 h2 {
-    font-family: "Gamour", serif;
-    color: #3b3759;
+    font-family: $font-uno, serif;
+    font-size: 1.875rem;
+    font-weight: lighter;
+    text-align: center;
     
 }
 
 h3{
-    font-family: "Nesans", serif;
-    
-}
-
-
-h4{   
-    font-family: "Crystal Noir", serif;
+    font-family: $font-dos, serif;
     font-size: 3rem;
 }
 
 
+h4{   
+    font-family: $font-tres, 'Times New Roman', Times, serif;
+    font-size: 0.93rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+}
+
+
 h6{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:$font-tres, 'Times New Roman', Times, serif;
     font-size: 0.93rem;
     font-weight: lighter;
     text-align: center;

@@ -11166,6 +11166,10 @@ body {
   font-family: "Louis George Café";
   src: url(../assets/fuentes/LouisGeorgeCafe/Louis\ George\ Cafe\ Light.ttf);
 }
+/* VERDE */
+/* VIOLETA */
+/* ROSITA */
+/* ROSITA CLARITO */
 /***************************
     ESTILOS GENERALES
 ***************************/
@@ -11196,22 +11200,33 @@ ul li:hover {
   background-color: #ecebe4;
 }
 
+h1, .h1 {
+  font-family: "Nesans", serif;
+  text-decoration: solid;
+}
+
 h2, .h2 {
-  font-family: "Gamour", serif;
-  color: #3b3759;
+  font-family: "Nesans", serif;
+  font-size: 1.875rem;
+  font-weight: lighter;
+  text-align: center;
 }
 
 h3, .h3 {
-  font-family: "Nesans", serif;
-}
-
-h4, .h4 {
   font-family: "Crystal Noir", serif;
   font-size: 3rem;
 }
 
+h4, .h4 {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 0.93rem;
+  font-weight: lighter;
+  text-align: center;
+  margin: auto;
+}
+
 h6, .h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 0.93rem;
   font-weight: lighter;
   text-align: center;
@@ -11224,17 +11239,13 @@ h6, .h6 {
   color: #eed3df;
 }
 
-.h3titulos {
-  font-family: "Nesans", serif;
-  font-size: 1.875rem;
-  font-weight: lighter;
-  text-align: center;
+h2, .h2 {
   margin: 1.25rem auto;
   padding: 18.75px 25px;
   color: #eed3df;
   background-color: #3b3759;
 }
-.h3titulos:hover {
+h2:hover, .h2:hover {
   background-color: #a4508b;
   background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
   transition: all 8s;
